@@ -2,7 +2,13 @@
   "name": "elm-parcel-template",
   "version": "1.0.0",
   "description": "",
-  "source": ["index.html"],
+  "source":
+    [ "index.html"
+    , "index-1.html"
+    , "index-2.html"
+    , "index-3.html"
+    , "index-4.html"
+    ],
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
