@@ -2,9 +2,10 @@
   "name": "elm-parcel-template",
   "version": "1.0.0",
   "description": "",
+  "source": ["index.html"],
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "start": "parcel",
+    "build": "parcel build",
     "postinstall": "elm-tooling install",
     "test": "elm-test-rs",
     "review": "elm-review"
