@@ -11,12 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Read .nvmrc
-        run: echo NVMRC=`cat .nvmrc` >> $GITHUB_ENV
+
       - uses: actions/setup-node@v2
         with:
-          node-version: ${{ env.NVMRC }}
-          cache: npm
+          node-version: '16'
+          cache: 'npm'
 
       # Re-use node_modules between runs until package.json or yarn.lock changes.
       - name: Cache node_modules
